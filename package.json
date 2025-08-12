@@ -1,0 +1,30 @@
+{
+  "name": "twilio-n8n-voice-agent",
+  "version": "1.0.0",
+  "description": "Voice agent using Twilio Media Streams, Google STT/TTS, and n8n (OpenRouter LLM)",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "NODE_ENV=development nodemon server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@google-cloud/speech": "^6.4.0",
+    "@google-cloud/text-to-speech": "^5.3.0",
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-ws": "^5.0.2",
+    "wavefile": "^11.0.0",
+    "websocket-stream": "^5.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "license": "MIT"
+}
+
+
